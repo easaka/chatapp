@@ -1,0 +1,10 @@
+<h1>Pages#home</h1>
+<p>Find me in app/views/pages/home.html.erb</p> 
+
+<% if current_user%>
+<%= button_to "logout",destroy_user_session_path, method: :delete %>
+<%= link_to "Chats",rooms_path%>
+<% else %>
+<%= link_to "login",new_user_session_path%>
+<%= link_to "Sign Up",new_user_registration_path%>
+<% end %>
