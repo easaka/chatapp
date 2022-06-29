@@ -7,8 +7,10 @@
         <%= render @users %>
     </div>
     <h4>Rooms</h4>
+    <%= render 'layouts/new_room_form' %>
     <%= turbo_stream_from "rooms"%>
     <div id="rooms">
         <%= render @rooms %>
     </div>
+
 </div>
