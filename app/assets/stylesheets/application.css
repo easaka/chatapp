@@ -14,7 +14,7 @@
  *= require_self
  */
 body{
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .msg-form{
@@ -25,8 +25,7 @@ body{
 
 #single_room{
     height: calc(100vh -150px);
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow: auto;
 }
 
 #message{
@@ -45,11 +44,13 @@ body{
     margin-bottom: 55px;
 }
 
+
+
 #chatroom_container{
     height: 100vh;
     margin-right: 0px !important;
-    overflow-x: scroll;
-    overflow-y: scroll;
+    overflow-x: auto;
+    overflow-y: auto;
 }
 
 .msg-content{
